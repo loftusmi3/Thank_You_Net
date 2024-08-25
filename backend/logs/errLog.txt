@@ -1,0 +1,39 @@
+20240809	23:01:33	61f1bc89-3e6c-4351-84b4-d16b4a48825d	TypeError	fsPromises.readFil is not a function
+20240812	12:35:39	65c2e55d-60d2-4b11-8119-54a7684b1d47	Error: Not allowed by CORS
+20240812	12:35:39	b066fc55-19b6-4c28-91ee-4d1fde80b700	Error: Not allowed by CORS
+20240812	12:39:31	3002df6e-a4c5-43c6-b40e-93c1f0da46f0	ReferenceError: sendFile is not defined
+20240812	12:39:31	d16e8f09-ef88-4a51-92d1-bae29956d669	ReferenceError: sendFile is not defined
+20240812	12:59:11	217673cc-347e-4cc9-8466-ca8788cb472e	TypeError: The "path" argument must be of type string. Received type number (301)
+20240812	18:34:42	120ea1a5-7119-4a45-ad59-c7e421f0802c	SyntaxError: Expected property name or '}' in JSON at position 1
+20240812	21:31:48	3078ece1-e16f-4bc2-aae1-9885c2cfd58d	SyntaxError: Expected ':' after property name in JSON at position 7
+20240813	06:49:33	ab1bf28d-30ff-4ae0-a049-5652e5a64b42	TypeError: Cannot read properties of undefined (reading 'authorization')
+20240813	06:49:50	75265ab7-9f2c-4673-a427-6d6860679862	SyntaxError: Unexpected token 'e', "eyJhbGciOi"... is not valid JSON
+20240813	06:50:06	689a1337-3ead-4aff-85d7-93c31439586e	SyntaxError: Unexpected token 'e', "eyJhbGciOi"... is not valid JSON
+20240813	06:51:20	e6417ebe-871b-4eb4-b5d7-c0719943f1ee	TypeError: Cannot read properties of undefined (reading 'authorization')
+20240813	06:53:37	1f44f581-b906-4f4c-9793-a99d6dc8061e	SyntaxError: Expected property name or '}' in JSON at position 1
+20240813	06:53:47	c3e83523-d439-45f7-a10d-db6bbf2a9549	TypeError: Cannot read properties of undefined (reading 'authorization')
+20240813	06:56:45	db331aeb-3d0b-49e1-ad2c-00cb4b7830a8	TypeError: Cannot read properties of undefined (reading 'authorization')
+20240813	07:27:04	ac64f7e5-5f31-4de5-b0da-63caeac187cf	TypeError: Cannot read properties of undefined (reading 'Authorization')
+20240813	07:27:40	20d1cf34-09af-4581-bb47-847d90ad434d	ReferenceError: authHeader is not defined
+20240813	07:30:38	bd2cef45-a526-4e76-bdfd-e29b5909211a	ReferenceError: authHeader is not defined
+20240813	07:31:04	5c972f43-345b-4288-a9b8-93f6e606f434	ReferenceError: token is not defined
+20240813	07:43:23	3cd0e30c-df48-4211-8787-b1798f977a88	ReferenceError: authHeader is not defined
+20240813	07:50:03	2b9f9dc5-ab36-4ce3-813f-5be5abaaf3cf	ReferenceError: authHeader is not defined
+20240813	07:50:21	6e216c82-46cd-4d58-bd22-a8866d0a9fe8	ReferenceError: authHeader is not defined
+20240814	13:23:23	c7a88ede-c352-4a54-9990-3ab532d2eefb	SyntaxError: Expected ',' or '}' after property value in JSON at position 31
+20240815	21:14:18	e351c956-7a80-49bc-b640-b1404968c560	ReferenceError: allowedOrigins is not defined
+20240815	21:14:29	78099d64-b078-47af-9451-08828880e862	ReferenceError: allowedOrigins is not defined
+20240815	21:15:43	c08b4ab0-6fbc-4987-98f8-cdd5580a335d	TypeError: whitelist.includes is not a function
+20240815	21:20:54	c63f8d37-dc07-4514-bc8b-3a4029281415	TypeError: whitelist.includes is not a function
+20240820	14:50:30	8604f685-0df9-4e4b-8397-d649fb686a90	SyntaxError: Expected ',' or '}' after property value in JSON at position 13
+20240824	17:54:56	8156b146-f052-4a06-acb8-b2c1deb3e417	Error: Not allowed by CORS
+20240824	17:58:18	ea2a72ff-8c69-49eb-a956-9944148ba700	Error: Not allowed by CORS
+20240824	18:00:30	470b4382-6feb-47a8-a46e-932a90356556	Error: Not allowed by CORS
+20240824	18:11:01	8f6e2d8f-1031-4553-8cce-8fb9a6b41255	Error: Not allowed by CORS
+20240824	18:15:52	11badb1e-cf98-4eed-9012-7f5f1ef48fd2	Error: Not allowed by CORS
+20240824	18:26:32	90a939b1-0e86-4d6c-ae62-07b411f1fd0b	Error: Not allowed by CORS
+20240824	18:28:50	324a824d-09c7-4694-828b-9ebee141346e	Error: Not allowed by CORS
+20240824	18:30:14	7777ea5f-0500-4df2-b917-248da4649ed1	Error: Not allowed by CORS
+20240824	18:32:06	227eb2c0-6ba8-4dba-8d37-f62044cdcb80	Error: Not allowed by CORS
+20240824	18:41:42	7a078a72-51d9-41a0-a411-8f648443d0e0	Error: Not allowed by CORS
+20240824	18:51:11	241591e5-1644-4ed4-a7a5-20b664b85dea	Error: Not allowed by CORS
