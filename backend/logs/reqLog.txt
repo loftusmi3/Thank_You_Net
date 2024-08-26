@@ -532,3 +532,5 @@
 20240824	20:43:38	d5fef472-0fcc-49e3-8f81-40f3f5922786	POST	http://localhost:3000	/auth
 20240825	15:44:05	1179bc90-cc5d-4499-ac94-ed4132099aed	OPTIONS	http://localhost:3000	/auth
 20240825	15:44:05	46aee30b-efef-4cff-a18c-b436b0b9f9d1	POST	http://localhost:3000	/auth
+20240825	16:52:54	b1fa1b1e-62a9-445e-af42-883ac9a69a32	OPTIONS	http://localhost:3000	/auth
+20240825	16:52:54	4866dbe8-f636-43db-9830-818c0370078c	POST	http://localhost:3000	/auth
