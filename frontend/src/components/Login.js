@@ -47,7 +47,13 @@ const Login = () => {
             setAuth({ user, pwd, roles, accessToken });
             resetUser();
             setPwd('');
-            navigate(from, { replace: true });
+            // If the user accesses the login page from the home page,
+            // send them to their dashboard
+            from === "/"
+            ? navigate("/dashboard", { replace: true })
+            // If the user had tried to access a page and they weren't
+            // logged in, send them to the page they wanted now that they logged in
+            : navigate(from, { replace: true });
         } catch (err) {
             if (!err?.response) {
                 setErrMsg('No Server Response');

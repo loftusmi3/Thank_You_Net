@@ -1,26 +1,15 @@
-import { useNavigate, Link } from "react-router-dom";
-import useLogout from "../hooks/useLogout";
-import NetVis from "./NetVis"
-import SideBar from "./SideBar"
-import Messages from "./Messages"
+import { Link } from "react-router-dom";
 
 const Home = () => {
-    const navigate = useNavigate();
-    const logout = useLogout();
-
-    const signOut = async () => {
-        await logout();
-        navigate('/linkpage');
-    }
 
     return (
         <section>
-            <NetVis></NetVis>
-            <SideBar></SideBar>
-            <Messages></Messages>
-            <div className="flexGrow">
-                <button onClick={signOut}>Sign Out</button>
-            </div>
+            <h1>Home</h1>
+            <br />
+            <p>Welcome to Thank You Net!</p>
+            <Link to="/login">Log In</Link>
+            <br />
+            <Link to="/register">Register</Link>
         </section>
     )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 const SideBar = () => {
   return (
-    <section>
+    <section className = "SideBar">
         
     </section>
   )

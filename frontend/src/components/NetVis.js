@@ -1,8 +1,8 @@
-import React from 'react'
 
 const NetVis = () => {
   return (
-    <section></section>
+    <section className="NetVis">
+    </section>
   )
 }
 

@@ -23,6 +23,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         {/* public routes */}
+        <Route path="/" element={<Home />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="linkpage" element={<LinkPage />} />
@@ -30,10 +31,6 @@ function App() {
 
         {/* we want to protect these routes */}
         <Route element={<PersistLogin />}>
-          <Route element={<RequireAuth allowedRoles={[ROLES.User]} />}>
-            <Route path="/" element={<Home />} />
-          </Route>
-
           <Route element = {<RequireAuth allowedRoles={[ROLES.User]}/>}>
             <Route path="dashboard" element={<Dashboard />} />
           </Route>
