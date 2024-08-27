@@ -70,6 +70,14 @@ section {
     border-radius: 10px;
 }
 
+.SideBarHeader {
+    height: 40px;
+    min-height: 0px;
+    background-color: rgba(0,0,0,0);
+    padding: 0rem;
+    justify-content: left;
+}
+
 .DM {
     min-height: 0;
     background-color: #EFF6FC;
@@ -83,8 +91,16 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    flex-grow: 1;
     padding-bottom: 1rem;
+}
+
+.searchForm {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.25rem 0.25rem 0.25rem ;
+    padding: 0 0 0 0;
+    height: 2rem;
 }
 
 a, a:visited {

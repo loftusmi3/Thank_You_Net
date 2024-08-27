@@ -6,7 +6,7 @@ import Missing from './components/Missing';
 import Unauthorized from './components/Unauthorized';
 import Lounge from './components/Lounge';
 import LinkPage from './components/LinkPage';
-import Dashboard from './components/Dashboard';
+import Dashboard from './components/dashboard/Dashboard';
 import RequireAuth from './components/RequireAuth';
 import PersistLogin from './components/PersistLogin';
 import { Routes, Route } from 'react-router-dom';

@@ -1,11 +1,11 @@
 
-const DMListEntry = ({key, contact}) => {
+const DMListEntry = ({username, lastMessage}) => {
   return (
     <li className = "DMListEntry">
         <p>
-          `${key}`
+          {username}
           <br />
-          `${contact}`
+          {lastMessage}
         </p>
     </li>
   )

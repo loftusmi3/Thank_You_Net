@@ -2,12 +2,14 @@ import DMListEntry from "./DMListEntry"
 
 
 const DMList = ({DMs}) => {
+  
   return (
     <ul>
         {DMs.map((DM) => (
             <DMListEntry
                 key = {DM.id}
-                contact = {DM.contact}
+                username = {DM.username}
+                lastMessage = {DM.lastMessage}
             />
         ))}
     </ul>

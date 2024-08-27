@@ -1,7 +1,7 @@
 import { useNavigate, Link } from "react-router-dom";
-import useLogout from "../hooks/useLogout";
+import useLogout from "../../hooks/useLogout";
 
-import NetVis from "./NetVis"
+import NetVis from "../NetVis"
 import SideBar from "./SideBar"
 import DM from "./DM"
 
