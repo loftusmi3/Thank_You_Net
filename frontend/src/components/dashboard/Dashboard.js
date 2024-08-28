@@ -3,7 +3,7 @@ import useLogout from "../../hooks/useLogout";
 
 import NetVis from "../NetVis"
 import SideBar from "./SideBar"
-import DM from "./DM"
+import MessageHistory from "./MessageHistory"
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -19,7 +19,7 @@ const Dashboard = () => {
         <NetVis />
         <section className = "Messages">
           <SideBar />
-          <DM />
+          <MessageHistory />
         </section>
         <div className="flexGrow">
                 <button onClick={signOut}>Sign Out</button>

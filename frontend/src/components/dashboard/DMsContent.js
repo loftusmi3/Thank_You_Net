@@ -1,6 +1,6 @@
 import DMList from './DMList'
 
-const Content = ({DMs}) => {
+const DMsContent = ({DMs}) => {
   
 
   // State does not change until after the function runs because
@@ -19,4 +19,4 @@ const Content = ({DMs}) => {
     </>
   )}
 
-export default Content
+export default DMsContent

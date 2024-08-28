@@ -1,4 +1,4 @@
-import Content from "./Content"
+import DMsContent from "./DMsContent"
 import SideBarHeader from "./SideBarHeader"
 import Search from "./Search"
 
@@ -8,7 +8,7 @@ const SideBar = () => {
     <section className = "SideBar">
         <SideBarHeader />
         <Search />
-        <Content DMs = {[{id: 0, username: "test", lastMessage: "idk"},
+        <DMsContent DMs = {[{id: 0, username: "test", lastMessage: "idk"},
                         {id: 1, username: "test2", lastMessage: "i still dk"}]}/>
     </section>
   )
