@@ -6,7 +6,6 @@ const MessagesContent = ({messages}) => {
   // State does not change until after the function runs because
   // console.log was called in the original state
   // count does not change its value in this function call
-
   return (
     <>
       {messages.length ? (

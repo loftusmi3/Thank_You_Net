@@ -1,9 +1,9 @@
 
-const MessagesListEntry = ({message}) => {
+const MessagesListEntry = ({text}) => {
   return (
     <li className = "messageListEntry">
         <p>
-          {message}
+          {text}
         </p>
     </li>
   )

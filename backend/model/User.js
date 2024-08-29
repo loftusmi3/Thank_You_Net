@@ -12,13 +12,18 @@ const userSchema = new Schema ({
             default: 2001
         },
         Editor: Number,
-        Admin: Number        
+        Admin: Number
     },
     password: {
         type:String,
         required: true
     },
-    refreshToken: String
+    refreshToken: String,
+    convos: {
+        type: Array,
+        default: [],
+        required: true
+    }
 })
 
 module.exports = mongoose.model('User', userSchema);

@@ -1,12 +1,12 @@
 import MessagesContent from "./MessagesContent"
 
-const DM = () => {
+const MessageHistory = () => {
   return (
     <section className = "DM">
-        <MessagesContent DMs = {[{id: 0, text: "Thank you"},
-                        {id: 1, text: "Your're welcome!"}]}/>
+        <MessagesContent messages = {[{id: 0, text: "Thank you"},
+                        {id: 1, text: "You're welcome!"}]}/>
     </section>
   )
 }
 
-export default DM
+export default MessageHistory
