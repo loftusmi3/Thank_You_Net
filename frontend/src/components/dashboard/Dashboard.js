@@ -1,11 +1,12 @@
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import useLogout from "../../hooks/useLogout";
 
-import NetVis from "../NetVis"
-import SideBar from "./SideBar"
-import MessageHistory from "./MessageHistory"
+import NetVis from "../NetVis";
+import SideBar from "./SideBar";
+import MessageHistory from "./MessageHistory";
 
 const Dashboard = () => {
+
   const navigate = useNavigate();
   const logout = useLogout();
 
@@ -22,7 +23,7 @@ const Dashboard = () => {
           <MessageHistory />
         </section>
         <div className="flexGrow">
-                <button onClick={signOut}>Sign Out</button>
+          <button onClick={signOut}>Sign Out</button>
         </div>
     </section>
   )
