@@ -1,6 +1,7 @@
+import { useState } from "react"
 
+const Search = ({onSubmit, search, setSearch}) => {
 
-const Search = () => {
   return (
     <form className = 'searchForm' onSubmit = {(e) => e.preventDefault()}>
         <label htmlFor="search" hidden>Search</label>
@@ -9,8 +10,8 @@ const Search = () => {
             type ="text"
             role = "searchbox"
             placeholder= "Search"
-            /* value = {search}    search was a prop passed that was the state of what someone typed into the search bar*/
-            /* onChange = {(e) => setSearch(e.target.value)} */
+            value = {search}
+            onChange = {(e) => setSearch(e.target.value)}
         />
     </form>
   )

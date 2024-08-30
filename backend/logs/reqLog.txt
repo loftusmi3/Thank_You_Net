@@ -692,3 +692,5 @@
 20240829	19:54:24	3bd1646d-2345-4b4f-babf-80b5db3e60e8	POST	http://localhost:3000	/auth
 20240829	19:56:42	21d65205-8bf8-4ea8-ab91-e66ff39d0343	OPTIONS	http://localhost:3000	/auth
 20240829	19:56:42	9aec7795-8745-4a25-9d70-1b7f0014e252	POST	http://localhost:3000	/auth
+20240829	20:19:11	82777b74-f475-436b-ad3c-f1e3ab22e22b	OPTIONS	http://localhost:3000	/auth
+20240829	20:19:11	0e01d2df-4b7d-47da-92f3-3945fcba3163	POST	http://localhost:3000	/auth

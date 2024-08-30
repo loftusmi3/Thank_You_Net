@@ -44,15 +44,16 @@ app.use('/register', require('./routes/register'));
 app.use('/auth', require('./routes/auth'));
 app.use('/refresh', require('./routes/refresh'));
 app.use('/logout', require('./routes/logout'));
+app.use('/userSearch', require('./routes/userSearch'));
 
 app.use(verifyJWT);
 
-app.get('/hello(.html)?', (req, res, next) => {
+/* app.get('/hello(.html)?', (req, res, next) => {
     console.log('attempted to load hello.html')
     next()
 }, (req, res) => {
     res.send("Hello World!")
-})
+}) */
 
 app.all('*', (req, res) => {
    res.status(404);
