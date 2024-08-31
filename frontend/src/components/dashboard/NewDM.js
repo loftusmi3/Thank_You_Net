@@ -1,6 +1,8 @@
 import {useState, useEffect} from 'react';
 
-import axios from '../api/axios';
+import axios from '../../api/axios';
+
+const NEWCONVO_URL = "/users/new-convo"
 
 const NewDM = ({search, setSearch}) => {
   
@@ -10,7 +12,7 @@ const NewDM = ({search, setSearch}) => {
     const fetchItems = async () => {
       try{
         if (search.length >= 3) {
-          const response = await fetch(API_URL);
+          const response = await axios.get();
           if (!response.ok) throw Error("Did not receive expected data");
           const users = await response.json();
           setUsers(users);

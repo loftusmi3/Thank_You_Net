@@ -18,4 +18,3 @@ const verifyJWT = (req, res, next) => {
 }
 
 module.exports = verifyJWT
-//{"user": "walt", "pwd": "pass"}

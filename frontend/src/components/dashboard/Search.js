@@ -1,9 +1,12 @@
-import { useState } from "react"
 
-const Search = ({onSubmit, search, setSearch}) => {
+const Search = ({search, setSearch, onSubmit}) => {
+
+  const handleChange = (e) => {
+    setSearch(e.target.value)
+  }
 
   return (
-    <form className = 'searchForm' onSubmit = {(e) => e.preventDefault()}>
+    <form className = 'searchForm' onSubmit = {onSubmit}>
         <label htmlFor="search" hidden>Search</label>
         <input
             id = "search"
@@ -11,7 +14,7 @@ const Search = ({onSubmit, search, setSearch}) => {
             role = "searchbox"
             placeholder= "Search"
             value = {search}
-            onChange = {(e) => setSearch(e.target.value)}
+            onChange = {handleChange}
         />
     </form>
   )

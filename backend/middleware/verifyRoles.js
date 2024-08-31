@@ -12,5 +12,3 @@ const verifyRoles = (...allowedRoles) => {
 }
 
 module.exports = verifyRoles;
-
-// {"user": "dave1", "pwd": "Aa$12345"}
