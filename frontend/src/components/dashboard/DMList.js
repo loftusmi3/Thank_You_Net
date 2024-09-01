@@ -1,15 +1,15 @@
 import DMListEntry from "./DMListEntry"
 
 
-const DMList = ({DMs}) => {
+const DMList = ({dMs}) => {
   
   return (
     <ul>
-        {DMs.map((DM) => (
+        {dMs.map((dM) => (
             <DMListEntry
-                key = {DM.id}
-                username = {DM.username}
-                lastMessage = {DM.lastMessage}
+                key = {dM.id}
+                username = {dM.username}
+                lastMessage = {dM.lastMessage}
             />
         ))}
     </ul>

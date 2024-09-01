@@ -10,7 +10,7 @@ const verifyJWT = (req, res, next) => {
         process.env.ACCESS_TOKEN_SECRET,
         (err, decoded) => {
             if (err) return res.sendStatus(403); // Invalid token
-            req.user = decoded.UserInfo.username;
+            req.uid = decoded.UserInfo.uid;
             req.roles = decoded.UserInfo.roles;
             next()
         }

@@ -31,7 +31,8 @@ const handleNewConvo = async (req, res) => {
     try {
         // Read out request body
         if (!req.body.searched_user) return res.status(400).json({'message': 'Username required for search'});
-        
+        if (!req.body.req_user) return res.status(400).json({'message': 'Username required for search'});
+
         // Look for the user requested
         const foundUser = await User.findOne({username: req.body.searched_user}).exec();
         if (!foundUser) return res.sendStatus(404); // User not found

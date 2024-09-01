@@ -43,8 +43,9 @@ const Login = () => {
             );
             const accessToken = response?.data?.accessToken;
             const roles = response?.data?.roles;
+            const uid = response?.data?._id;
             console.log(response);
-            setAuth({ user, pwd, roles, accessToken });
+            setAuth({ uid, user, pwd, roles, accessToken });
             resetUser();
             setPwd('');
             // If the user accesses the login page from the home page,

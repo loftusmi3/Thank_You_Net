@@ -1,6 +1,6 @@
 import DMList from './DMList'
 
-const DMsContent = ({DMs}) => {
+const DMsContent = ({dMs}) => {
   
 
   // State does not change until after the function runs because
@@ -9,9 +9,9 @@ const DMsContent = ({DMs}) => {
 
   return (
     <>
-      {DMs.length ? (
+      {dMs.length ? (
         <DMList
-          DMs={DMs}  
+        dMs={dMs}  
         />
       ) : (
         <p style = {{marginTop: '2rem'}}>Your list is empty</p>
