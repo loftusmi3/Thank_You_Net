@@ -1,7 +1,6 @@
 import DMList from './DMList'
 
 const DMsContent = ({dMs}) => {
-  
 
   // State does not change until after the function runs because
   // console.log was called in the original state
