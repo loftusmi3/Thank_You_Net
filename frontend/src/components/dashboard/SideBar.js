@@ -22,7 +22,10 @@ const SideBar = () => {
 
   useEffect( () => {
     const getUserInfo = async () => {
-      const userInfo = await axios.get(USERS_URL + `/:${uid}`);
+      const userInfo = await axios.get(USERS_URL + `/:${uid}`,
+        {headers: {
+          Authorization: 'Bearer ' + accessToken
+      }});
       setDMs(userInfo.data.convos)
     }
     getUserInfo().catch(console.error);
@@ -50,7 +53,7 @@ const SideBar = () => {
           newDM ? (<>
             <Search search = {search} setSearch = {setSearch} onSubmit = {HandleNewConvo}/>
             </>) : (<>
-            <Search search = {search} setSearch = {setSearch}/> {/* TO DO: Update with correct database */}
+            <Search search = {search} setSearch = {setSearch}/>
             <DMsContent dMs = {dMs}/></>
           )
         }</>

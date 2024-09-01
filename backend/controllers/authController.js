@@ -15,17 +15,18 @@ const handleLogin = async (req, res) => {
         // Create JWTs
         const accessToken = jwt.sign(
             {"UserInfo": {
-                "uid": foundUser.uid,
+                "uid": foundUser._id,
                 "roles": roles
             }},
             process.env.ACCESS_TOKEN_SECRET,
             {expiresIn: '10m'}
         );
         const refreshToken = jwt.sign(
-            {"uid": foundUser.uid},
+            {"uid": foundUser._id},
             process.env.REFRESH_TOKEN_SECRET,
             {expiresIn: '1d'}
         );
+        const uid = foundUser.id;
 
         foundUser.refreshToken = refreshToken;
         const result = await foundUser.save();
@@ -33,7 +34,7 @@ const handleLogin = async (req, res) => {
 
         // Http cookie is not available to js so it's much more secure
         res.cookie('jwt', refreshToken, {httpOnly: true, sameSite: 'None', maxAge: 24*60*60*1000, secure: true})
-        res.json({roles, accessToken});
+        res.json({roles, accessToken, uid});
     } else {
         res.sendStatus(401);
     }
