@@ -6,4 +6,4 @@ The premise of the platform is that when someone sends a thank you note, it serv
 
 Earlier this August, I began learning web development so that I can build a prototype of the platform for the Future of Data Hackathon.  This is what I came up with for my submission!  There's plenty more left to do but it gets the idea across.
 
-Many thanks to Dave Gray's coding tutorials and PrepBytes for extensive starter code :)
+Many thanks to Dave Gray's coding tutorials and PrepBytes for extensive starter code and guidance :)
