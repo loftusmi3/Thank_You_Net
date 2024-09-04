@@ -12,3 +12,5 @@ Many thanks to Dave Gray's coding tutorials and PrepBytes for extensive starter 
 Set up:
 The backend directory is the server, and the frontend directory is the client-side frontend.
 Run npm i in the backend and the frontend to install packages, and then start both the server and the frontend with npm start.
+
+Built with MERN
