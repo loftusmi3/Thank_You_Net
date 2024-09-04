@@ -42,7 +42,11 @@ const SideBar = ({dMs}) => {
             <Search search = {search} setSearch = {setSearch} onSubmit = {HandleNewConvo}/>
             </>) : (<>
             <Search search = {search} setSearch = {setSearch}/>
-            <DMsContent dMs = {dMs}/></>
+            <DMsContent dMs = {[{id: 0, username: "Anthony", lastMessage: " - You're welcome!"},
+              {id: 1, username: "Mukundh", lastMessage: " - That's so thoughtful of you :)"},
+              {id: 2, username: "Daniel", lastMessage: " - of course man!"}
+            ]}/>
+            {/* <DMsContent dMs = {dMs}/> */}</>
           )
         }</>
     </section>

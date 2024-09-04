@@ -4,14 +4,14 @@ import MessagesListEntry from "./MessagesListEntry"
 const MessagesList = ({messages}) => {
   
   return (
-    <ul>
+    <ol className="messagesList">
         {messages.map((message) => (
             <MessagesListEntry
                 key = {message.id}
                 text = {message.text}
             />
         ))}
-    </ul>
+    </ol>
   )}
 
 export default MessagesList

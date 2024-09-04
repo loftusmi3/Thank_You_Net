@@ -5,7 +5,7 @@ import useLogout from "../../hooks/useLogout";
 import useAuth from '../../hooks/useAuth';
 import axios from '../../api/axios';
 
-import NetVis from "../NetVis";
+import NetVis from "./NetVis";
 import SideBar from "./SideBar";
 import MessageHistory from "./MessageHistory";
 
@@ -37,11 +37,11 @@ const Dashboard = () => {
       setDMs(userInfo.data.convos)
     }
     getUserInfo().catch(console.error);
-  }, [uid])
+  }, [uid, accessToken])
 
   return (
     <section className = "Dashboard">
-        <NetVis />
+       { <NetVis />}
         <section className = "Messages">
           <SideBar dMs = {dMs}/>
           <MessageHistory />

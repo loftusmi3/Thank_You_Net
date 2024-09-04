@@ -1,7 +1,7 @@
 
 const MessagesListEntry = ({text}) => {
   return (
-    <li className = "messageListEntry">
+    <li className = "messagesListEntry">
         <p>
           {text}
         </p>
